@@ -4,6 +4,8 @@
   "description": "Nossa biblioteca do curso JS com TDD na pratica",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "pre-push": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +25,11 @@
   "homepage": "https://github.com/hrcodes/js-tdd-course1#readme",
   "dependencies": {
     "gitignore": "^0.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.6"
   }
 }
