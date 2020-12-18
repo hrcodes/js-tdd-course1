@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/hrcodes/js-tdd-course1/issues"
   },
-  "homepage": "https://github.com/hrcodes/js-tdd-course1#readme"
+  "homepage": "https://github.com/hrcodes/js-tdd-course1#readme",
+  "dependencies": {
+    "gitignore": "^0.6.0"
+  }
 }
