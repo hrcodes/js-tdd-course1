@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    Teste
+</body>
+<script>
+    // array
+    const ireland = ['Dublin', 'Galway', 'Cork', 'Dublin'] 
+    console.log(ireland.indexOf('Dublin'));
+
+
+    // retornar "I love + " cada um dos itens do array, dentro de outro array
+    const love = ireland.map(function(name){      
+        return `I love ${name}`;
+    });
+    
+    // ======================= Arrow Function =======================
+
+    // sem o function usando =>
+    const loveArrow = ireland.map((name) => {    
+        return `I love ${name}`;
+    });
+    
+    // somente um valor do array, sem os parenteses, usando =>
+    const loveArrowSingle = ireland.map(name => { 
+        return `I love ${name}`
+    });
+
+    // somente um valor do array, em uma linha
+    const loveArrowOneLine = ireland.map(name => `I Love ${name}`);
+
+    console.log(loveArrowOneLine) //["I love Dublin", "I love Galway", "I love Cork"]
+
+    // trocar somente quando encontrar uma linha específica
+    const loveChain = ireland
+                        .filter(name => name === 'Dublin')
+                        .map(name => `I love ${name}`)
+    
+    
+    console.log(loveChain) //["I love Dublin"]
+
+</script>
+</html>
