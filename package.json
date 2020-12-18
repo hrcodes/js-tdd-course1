@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd-course1",
+  "version": "1.0.0",
+  "description": "Nossa biblioteca do curso JS com TDD na pratica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrcodes/js-tdd-course1.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Helder Oliveira <helder.ramos.oliveira@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hrcodes/js-tdd-course1/issues"
+  },
+  "homepage": "https://github.com/hrcodes/js-tdd-course1#readme"
+}
