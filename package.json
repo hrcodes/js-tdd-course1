@@ -4,7 +4,8 @@
   "description": "Nossa biblioteca do curso JS com TDD na pratica",
   "main": "index.js",
   "scripts": {
-    "prepush": "npm run eslint src/*.js",
+    "link": "eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
