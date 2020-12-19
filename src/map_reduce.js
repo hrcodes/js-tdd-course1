@@ -1,33 +1,33 @@
 const produtos = [
   {
     nome: 'Notebook',
-    preco: 2100
+    preco: 2100,
   },
   {
     nome: 'smartphone',
-    preco: 400
+    preco: 400,
   },
   {
     nome: 'carregador',
-    preco: 100
-  }
+    preco: 100,
+  },
 ];
 console.log(produtos);
 
 // ==========================================================================
 // MAP muda ou altera cada um dos valores de um array anterior
 
-// Calculando o valor * 4 
-const precosEmReais = produtos.map(p => p.preco * 4);
+// Calculando o valor * 4
+const precosEmReais = produtos.map((p) => p.preco * 4);
 console.log(precosEmReais);
 
 // Separando somente o preço
-const soprecos = produtos.map(p => p.preco);
-console.log(soprecos)
+const soprecos = produtos.map((p) => p.preco);
+console.log(soprecos);
 
-// Separando por nome 
-const sonome = produtos.map(p => p.nome);
-console.log(sonome)
+// Separando por nome
+const sonome = produtos.map((p) => p.nome);
+console.log(sonome);
 
 // ==========================================================================
 // REDUCE
@@ -43,19 +43,19 @@ console.log(total);
 // ==========================================================================
 // COMBINACAO
 // MAP
-var arr_ConverterEmReais = produtos.map(item => item.preco * 5.06);
+let arr_ConverterEmReais = produtos.map((item) => item.preco * 5.06);
 console.log(arr_ConverterEmReais);
 
 // teste de arredondamento - funfou!
-arr_ConverterEmReais = arr_ConverterEmReais.map(item => Number(item.toFixed(2)));
+arr_ConverterEmReais = arr_ConverterEmReais.map((item) => Number(item.toFixed(2)));
 console.log(arr_ConverterEmReais);
 
-//REDUCE
+// REDUCE
 const arr_somaReais = arr_ConverterEmReais.reduce((acumulado, item) => acumulado += item, 0);
 console.log(arr_somaReais);
 
 // OS DOIS JUNTOS
 const arr_totalReais = produtos
-                            .map(item => item.preco * 5.06)
-                            .reduce((acumulado, item) => acumulado += item, 0)
-console.log(`Ambos :${arr_totalReais}`)
+  .map((item) => item.preco * 5.06)
+  .reduce((acumulado, item) => acumulado += item, 0);
+console.log(`Ambos :${arr_totalReais}`);
